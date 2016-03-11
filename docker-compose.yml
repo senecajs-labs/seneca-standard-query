@@ -1,0 +1,12 @@
+postgres:
+  build: ./docker
+  ports:
+    - "5432:5432"
+  # environment:
+    # MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    # MYSQL_DATABASE: "senecatest"
+    # MYSQL_USER: "senecatest"
+    # MYSQL_PASSWORD: "senecatest"
+    # POSTGRES_USER: "senecatest"
+    # POSTGRES_PASSWORD: "senecatest"
+    # POSTGRES_DB: "senecatest"
