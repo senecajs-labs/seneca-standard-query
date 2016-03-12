@@ -44,6 +44,6 @@
     "lab": "6.x.x",
     "seneca": "1.2.0",
     "seneca-store-test": "1.0.0",
-    "seneca-postgres-store": "https://github.com/senecajs/seneca-postgres-store.git"
+    "seneca-postgres-store": "https://github.com/mihaidma/seneca-postgres-store#cleanup"
   }
 }
