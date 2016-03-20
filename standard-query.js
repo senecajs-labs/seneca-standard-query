@@ -125,3 +125,4 @@ module.exports.jsonSupport = QueryBuilder.jsonSupport
 module.exports.whereargs = QueryBuilder.whereargs
 module.exports.metaquery = QueryBuilder.metaquery
 module.exports.selectstmOr = QueryBuilder.selectstmOr
+module.exports.selectstmCustom = QueryBuilder.selectstmCustom
