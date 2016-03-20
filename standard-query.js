@@ -119,3 +119,9 @@ module.exports = function queryBuilder (options) {
     return done(null, {query: query})
   })
 }
+
+module.exports.fixPrepStatement = QueryBuilder.fixPrepStatement
+module.exports.jsonSupport = QueryBuilder.jsonSupport
+module.exports.whereargs = QueryBuilder.whereargs
+module.exports.metaquery = QueryBuilder.metaquery
+module.exports.selectstmOr = QueryBuilder.selectstmOr
