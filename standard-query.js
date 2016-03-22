@@ -126,3 +126,5 @@ module.exports.whereargs = QueryBuilder.whereargs
 module.exports.metaquery = QueryBuilder.metaquery
 module.exports.selectstmOr = QueryBuilder.selectstmOr
 module.exports.selectstmCustom = QueryBuilder.selectstmCustom
+module.exports.buildQueryFromExpressionCustom = QueryBuilder.buildQueryFromExpressionCustom
+module.exports.parseExpression = QueryBuilder.parseExpression
