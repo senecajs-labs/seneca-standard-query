@@ -9,7 +9,8 @@ seneca-standard-query
 [![Dependency Status][david-badge]][david-url]
 [![Gitter][gitter-badge]][gitter-url]
 
-seneca-standard-query is a plugin for the [Seneca][seneca] MVP toolkit that provides the query building capabilites of the [Seneca][seneca] store plugins. It currently works with [seneca-postgres-store][postgres-store] and [seneca-mysql-store][mysql-store]
+seneca-standard-query is a plugin for the [Seneca][seneca] MVP toolkit that provides the query building capabilites of the [Seneca][seneca] store plugins. It currently works with [seneca-postgres-store][postgres-store] and [seneca-mysql-store][mysql-store].
+Its functionality can be extended by using the [seneca-store-query][store-query] plugin
 
 The plugin is used internally by the Seneca stores.
 
@@ -100,3 +101,4 @@ examples, extra testing, or new features please get in touch.
 [seneca]: http://senecajs.org/
 [postgres-store]: https://github.com/senecajs/seneca-postgres-store
 [mysql-store]: https://github.com/senecajs/seneca-mysql-store
+[store-query]: https://github.com/senecajs/seneca-store-query
