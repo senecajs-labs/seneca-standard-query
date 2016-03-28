@@ -32,6 +32,13 @@
     "store",
     "query"
   ],
+  "files": [
+    "lib",
+    "LICENSE.txt",
+    "package.json",
+    "README.md",
+    "standard-query.js"
+  ],
   "bugs": {
     "url": "https://github.com/senecajs/seneca-standard-query/issues"
   },
