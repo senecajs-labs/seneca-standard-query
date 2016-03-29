@@ -128,3 +128,6 @@ module.exports.selectstmOr = QueryBuilder.selectstmOr
 module.exports.selectstmCustom = QueryBuilder.selectstmCustom
 module.exports.buildQueryFromExpressionCustom = QueryBuilder.buildQueryFromExpressionCustom
 module.exports.parseExpression = QueryBuilder.parseExpression
+module.exports.snakeToCamelCase = QueryBuilder.snakeToCamelCase
+module.exports.camelCaseToSnake = QueryBuilder.camelCaseToSnake
+module.exports.makeent = QueryBuilder.makeent
