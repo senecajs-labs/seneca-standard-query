@@ -1,12 +1,17 @@
 'use strict'
 
 var _ = require('lodash')
-var QueryBuilder = require('./lib/query-builder')
-
 var actionRole = 'sql'
+var name = 'standard-query'
 
 module.exports = function queryBuilder (options) {
   var seneca = this
+
+  var ColumnNameParsing = {
+    fromColumnName: options.fromColumnName,
+    toColumnName: options.toColumnName
+  }
+  var QueryBuilder = require('./lib/query-builder')(ColumnNameParsing)
 
   function specificTypes (storeName) {
     var sTypes = {
@@ -118,16 +123,21 @@ module.exports = function queryBuilder (options) {
     var query = QueryBuilder.deletestm(qent, q, sTypes)
     return done(null, {query: query})
   })
-}
 
-module.exports.fixPrepStatement = QueryBuilder.fixPrepStatement
-module.exports.jsonSupport = QueryBuilder.jsonSupport
-module.exports.whereargs = QueryBuilder.whereargs
-module.exports.metaquery = QueryBuilder.metaquery
-module.exports.selectstmOr = QueryBuilder.selectstmOr
-module.exports.selectstmCustom = QueryBuilder.selectstmCustom
-module.exports.buildQueryFromExpressionCustom = QueryBuilder.buildQueryFromExpressionCustom
-module.exports.parseExpression = QueryBuilder.parseExpression
-module.exports.snakeToCamelCase = QueryBuilder.snakeToCamelCase
-module.exports.camelCaseToSnake = QueryBuilder.camelCaseToSnake
-module.exports.makeent = QueryBuilder.makeent
+  return {
+    name: name,
+    exportmap: {utils: {
+      fixPrepStatement: QueryBuilder.fixPrepStatement,
+      jsonSupport: QueryBuilder.jsonSupport,
+      whereargs: QueryBuilder.whereargs,
+      metaquery: QueryBuilder.metaquery,
+      selectstmOr: QueryBuilder.selectstmOr,
+      selectstmCustom: QueryBuilder.selectstmCustom,
+      buildQueryFromExpressionCustom: QueryBuilder.buildQueryFromExpressionCustom,
+      parseExpression: QueryBuilder.parseExpression,
+      fromColumnName: QueryBuilder.fromColumnName,
+      toColumnName: QueryBuilder.toColumnName,
+      makeent: QueryBuilder.makeent
+    }}
+  }
+}
