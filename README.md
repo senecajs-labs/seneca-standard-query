@@ -67,6 +67,25 @@ The standard Seneca query format is supported:
 
 - `.list$({f1:v1,...}, {fields$:['fd1','f2']})` means only return the listed fields.
 
+## Column name transformation, backward compatibility
+
+To generate queries backward compatible with previous seneca plugin versions that were converting database column CamelCase names to Snake case names or just applying name transformations it is possible to pass as options functions that convert column names to database column names like the following:
+
+```js
+var DefaultConfig = {
+...
+  fromColumnName: function (attr) {
+    // apply some conversion on column names
+    return attr.toUpperCase()
+  },
+  toColumnName: function (attr) {
+    // convert back column names
+    return attr.toLowerCase()
+  }
+}
+seneca.use(require('seneca-postgres-store'), DefaultConfig)
+```
+
 ## Limits
 
 By default queries are limited to 20 values. This can be bypassed by passing the `nolimit` option, which if set to true will not limit any queries.
