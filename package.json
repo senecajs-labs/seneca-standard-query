@@ -1,6 +1,6 @@
 {
   "name": "seneca-standard-query",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Standard query for Seneca framework stores",
   "main": "standard-query.js",
   "license": "MIT",
