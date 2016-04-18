@@ -106,7 +106,7 @@ module.exports = function queryBuilder (options) {
       fromColumnName: QueryBuilder.fromColumnName,
       toColumnName: QueryBuilder.toColumnName,
       makeent: QueryBuilder.makeent,
-      buildSelectStatement: QueryBuilder.buildSelectStatement
+      buildSelectStatementCustom: QueryBuilder.buildSelectStatementCustom
     }}
   }
 }
