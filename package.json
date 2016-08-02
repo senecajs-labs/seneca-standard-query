@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/senecajs/seneca-standard-query.git"
+    "url": "git+https://github.com/senecajs-labs/seneca-standard-query.git"
   },
   "keywords": [
     "seneca",
@@ -40,9 +40,9 @@
     "standard-query.js"
   ],
   "bugs": {
-    "url": "https://github.com/senecajs/seneca-standard-query/issues"
+    "url": "https://github.com/senecajs-labs/seneca-standard-query/issues"
   },
-  "homepage": "https://github.com/senecajs/seneca-store-query#readme",
+  "homepage": "https://github.com/senecajs-labs/seneca-store-query#readme",
   "dependencies": {
     "lodash": "3.10.1",
     "node-uuid": "1.4.7"

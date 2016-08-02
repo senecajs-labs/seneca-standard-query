@@ -105,14 +105,15 @@ To run the tests you need to have the docker image built and running, that is ma
 In another console execute `npm test`
 
 ## Contributing
-We encourage participation. If you feel you can help in any way, be it with
-examples, extra testing, or new features please get in touch.
+The [Senecajs org](https://github.com/senecajs/) encourage open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
 
+## License
+Copyright Mihai Dima and other contributors 2016, Licensed under [MIT][].
 
 [npm-badge]: https://img.shields.io/npm/v/seneca-standard-query.svg
 [npm-url]: https://npmjs.com/package/seneca-standard-query
-[travis-badge]: https://api.travis-ci.org/senecajs/seneca-standard-query.svg
-[travis-url]: https://travis-ci.org/senecajs/seneca-standard-query
+[travis-badge]: https://api.travis-ci.org/senecajs-labs/seneca-standard-query.svg
+[travis-url]: https://travis-ci.org/senecajs-labs/seneca-standard-query
 [david-badge]: https://david-dm.org/senecajs/seneca-standard-query.svg
 [david-url]: https://david-dm.org/senecajs/seneca-standard-query
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
@@ -121,3 +122,5 @@ examples, extra testing, or new features please get in touch.
 [postgres-store]: https://github.com/senecajs/seneca-postgres-store
 [mysql-store]: https://github.com/senecajs/seneca-mysql-store
 [store-query]: https://github.com/senecajs/seneca-store-query
+
+[MIT]: ./LICENSE
