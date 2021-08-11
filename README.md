@@ -9,6 +9,9 @@ seneca-standard-query
 [![Dependency Status][david-badge]][david-url]
 [![Gitter][gitter-badge]][gitter-url]
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
+
 seneca-standard-query is a plugin for the [Seneca][seneca] MVP toolkit that provides the query building capabilites of the [Seneca][seneca] store plugins. It currently works with [seneca-postgres-store][postgres-store] and [seneca-mysql-store][mysql-store].
 Its functionality can be extended by using the [seneca-store-query][store-query] plugin
 
